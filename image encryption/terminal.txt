@@ -1,0 +1,11 @@
+
+python3 crypto_client.py --type encrypt
+    --image example/original.png
+    --output_image example/encrypted.png
+    --key example/encoded_key.txt
+    --alpha 8 --iter_max 10
+
+
+python steganography.py merge --image1=res/image1.jpg --image2=res/image2.jpg --output=res/output.png
+python steganography.py unmerge --image=res/output.png --output=res/output2.png
+
